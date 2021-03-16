@@ -1,4 +1,5 @@
 # app
+Developed for ConnectNow.
 
 ## Project setup
 ```
