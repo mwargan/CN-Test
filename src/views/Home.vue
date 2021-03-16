@@ -107,9 +107,6 @@ export default {
       this.minimumScore = 1
     }
   }
-
 }
 
 </script>
-<style lang="scss" scoped>
-</style>

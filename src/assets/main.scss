@@ -171,6 +171,7 @@ button {
 	}
 	button {
 		border-radius: 0;
+		transition: 0.5s all;
 		&.flipped {
 			transform: rotate(180deg);
 		}
