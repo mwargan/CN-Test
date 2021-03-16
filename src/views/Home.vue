@@ -101,7 +101,7 @@ export default {
     },
     clearFilters () {
       this.searchTerm = ''
-      this.minimumScore = 0
+      this.minimumScore = 1
     }
   }
 
