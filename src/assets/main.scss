@@ -82,6 +82,17 @@ h1, h2, h3, h4, h5, h6, label, button, input[type="button"], nav > a, .title {
 		margin-bottom: 2rem;
 		color: white;
 	}
+	img.loader {
+		margin: 0 auto;
+	    height: 30px;
+	    width: 100%;
+	    object-fit: scale-down;
+	    +span {
+	    	text-align: center;
+	    	display: block;
+	    	font-size: 85%;
+	    }
+	}
 }
 
 #app {

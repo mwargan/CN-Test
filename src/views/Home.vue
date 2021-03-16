@@ -5,10 +5,10 @@
         <div class="filters card">
           <div class="card-heading">Filter results</div>
           <label>Name (contains)
-            <input type="text" name="" value="" v-model="searchTerm">
+            <input type="text" v-model="searchTerm">
           </label>
           <label>Minimum score
-            <input type="number" min="1" max="10" v-model="minimumScore">
+            <input type="number" min="1" max="10" inputmode="numeric" pattern="[0-9]*" v-model="minimumScore">
           </label>
           <label for="orderBy">Order by</label>
           <div class="order-by-input-group">
@@ -30,7 +30,10 @@
         <template v-if="filteredAndOrderedResults.length > 0">
           <result v-for="result in filteredAndOrderedResults" :rating="result.rating" :title="result.name" :date="result.first_release_date" :body="result.summary" :key="result.id"></result>
         </template>
-        <div v-else-if="loading" class="result card">Loading....</div>
+        <div v-else-if="loading" class="result card">
+            <img src="../assets/loading.gif" alt="" class="loader">
+            <span>Hold on, fetching games...</span>
+        </div>
         <div v-else class="result card">No results found</div>
       </div>
     </div>
